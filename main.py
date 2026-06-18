@@ -1,9 +1,61 @@
-def in_autotests_we_trust(a, b):
-    if a == b:
-        print('Passed')
-    else:
-        print('Failed')
+import data
+import helpers
 
-in_autotests_we_trust(10, '10')
 
-in_autotests_we_trust(0, False)
+class TestUrbanRoutes:
+
+    @classmethod
+    def setup_class(cls):
+        # Check if the Urban Routes server is reachable
+        if helpers.is_url_reachable(data.URBAN_ROUTES_URL):
+            print("Connected to the Urban Routes server")
+        else:
+            print("Cannot connect to Urban Routes. Check the server is on and still running")
+
+    def test_set_route(self):
+        # Add in S8
+        print("function created for set route")
+        pass
+
+    def test_select_plan(self):
+        # Add in S8
+        print("function created for select plan")
+        pass
+
+    def test_fill_phone_number(self):
+        # Add in S8
+        print("function created for fill phone number")
+        pass
+
+    def test_fill_card(self):
+        # Add in S8
+        print("function created for fill card")
+        pass
+
+    def test_comment_for_driver(self):
+        # Add in S8
+        print("function created for comment for driver")
+        pass
+
+    def test_order_blanket_and_handkerchiefs(self):
+        # Add in S8
+        print("function created for order blanket and handkerchiefs")
+        pass
+
+    # --- Task 3 ---
+    # [Add appropriate comments and code for Task 3 here]
+
+    # --- Task 4 ---
+    # [Add appropriate comments and code for Task 4 here]
+
+    # --- Task 5 ---
+    def test_order_2_ice_creams():
+        # Loop twice to prepare the order for two ice creams
+        for i in range(2):
+            # Add in S8
+            pass
+
+    def test_car_search_model_appears(self):
+        # Add in S8
+        print("function created for car search model appears")
+        pass
