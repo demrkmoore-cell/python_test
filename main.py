@@ -49,9 +49,10 @@ class TestUrbanRoutes:
     # [Add appropriate comments and code for Task 4 here]
 
     # --- Task 5 ---
-    def test_order_2_ice_creams():
+    def test_order_2_ice_creams(self):
         # Loop twice to prepare the order for two ice creams
-        for i in range(2):
+        number_of_ice_creams = 2
+        for i in range(number_of_ice_creams):
             # Add in S8
             pass
 
